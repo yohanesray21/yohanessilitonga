@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.layout {
-  max-width: 68rem;
-  @apply mx-auto w-11/12;
+:root {
+  --tw-yrf-primary-200: 209 107 165;
+  --tw-yrf-primary-300: 149 55 206;
+  --tw-yrf-primary-400: 95 251 241;
+  --tw-yrf-primary-500: 0 196 253;
+
+  --yrf-primary-200: rgb(var(--tw-yrf-primary-200)); /* #D16BA5 */
+  --yrf-primary-300: rgb(var(--tw-yrf-primary-300)); /* #9537CD */
+  --yrf-primary-400: rgb(var(--tw-yrf-primary-400)); /* #5FFBF1 */
+  --yrf-primary-500: rgb(var(--tw-yrf-primary-500)); /* #00c4fd */
+}
+
+@layer base {
+  .layout {
+    max-width: 68rem;
+    @apply mx-auto w-11/12;
+  }
 }
